@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "outDir": "dist",
+    "module": "Node16",
+    "target": "ES6",
+    "esModuleInterop": true,
+    "moduleResolution": "Node16",
+    "alwaysStrict": true,
+    "allowUnreachableCode": false,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

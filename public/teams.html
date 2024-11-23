@@ -1,0 +1,57 @@
+<!-- teams.html -->
+<!doctype html>
+<html>
+    <head>
+        <title>Brackets Teams</title>
+        <link rel="stylesheet" href="css/teams.css" />
+    </head>
+    <body>
+        <h1>Brackets Teams</h1>
+
+        <div class="card game-info">
+            <h2>Current Game</h2>
+            <div id="game-stats-content" class="loading-placeholder">
+                Loading game stats...
+            </div>
+        </div>
+
+        <div class="card round-info">
+            <div class="round-header">
+                <h2>Round <span id="round-number">-</span></h2>
+                <div id="round-status" class="round-status"></div>
+            </div>
+            <div class="round-details">
+                <div>Start Time: <span id="start-time">-</span></div>
+                <div>End Time: <span id="end-time">-</span></div>
+                <div>Time Remaining: <span id="time-remaining">-</span></div>
+            </div>
+        </div>
+
+        <div class="card round-stats">
+            <h3>Round Statistics</h3>
+            <div id="round-stats-content" class="loading-placeholder">
+                Loading stats...
+            </div>
+        </div>
+
+        <div class="card elimination-stats">
+            <h3>Elimination History</h3>
+            <div id="elimination-stats-content" class="loading-placeholder">
+                Loading elimination stats...
+            </div>
+        </div>
+
+        <div class="controls">
+            <select id="sort-select" onchange="sortTeams()">
+                <option value="id">Sort by ID</option>
+                <option value="members">Sort by Member Count</option>
+                <option value="cutoff">Sort by Cutoff</option>
+            </select>
+        </div>
+
+        <div id="loading" class="loading-placeholder">Loading teams...</div>
+        <div class="team-grid" id="teams-container"></div>
+
+        <script src="js/teams.js"></script>
+    </body>
+</html>

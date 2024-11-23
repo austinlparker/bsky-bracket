@@ -1,0 +1,43 @@
+{
+  "name": "feed-generator",
+  "version": "1.0.0",
+  "description": "atproto feed generator starter kit",
+  "main": "index.js",
+  "repository": "git@github.com:bluesky-social/feed-generator.git",
+  "author": "dholms <dtholmgren@gmail.com>",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "publishFeed": "tsx scripts/publishFeedGen.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.6.20",
+    "@atproto/identity": "^0.2.1",
+    "@atproto/lexicon": "^0.2.2",
+    "@atproto/syntax": "^0.1.2",
+    "@atproto/xrpc-server": "^0.6.0",
+    "@skyware/jetstream": "^0.2.0",
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "kysely": "^0.27.4",
+    "pg": "^8.13.1",
+    "pg-connection-string": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.1.2",
+    "@types/pg": "^8.11.10",
+    "inquirer": "^12.0.1",
+    "ts-node": "^10.9.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": ">= 18"
+  }
+}
